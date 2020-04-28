@@ -16,10 +16,11 @@ header {
 
 nav {
 	float: left;
-	width: 30%;
-	height: 300px;
+	width: 15%;
+	height: 618px;
 	background: #ccc;
-	padding 20px;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 nav ul {
@@ -30,9 +31,10 @@ nav ul {
 article {
 	float: left;
 	padding: 20px;
-	width: 70%;
+	width: 85%;
 	background-color: #f1f1f1;
-	height: 300px;
+	height: 618px;
+	margin-bottom: 20px;
 }
 
 section:after {
@@ -42,8 +44,12 @@ section:after {
 }
 
 footer {
+	position: absolute;
+	bottom: 0;
+	width: 99%;
+	height: 135px;
 	background-color: #007;
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 	color: white;
 }

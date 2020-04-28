@@ -6,8 +6,8 @@
   <link href="style/style.css" rel="stylesheet">
  </head>
  <body>
-  <header>
-   <h2>The Index of Characters</h2>
+  <header id="character-header">
+   <h2>Character Creation</h2>
   </header>
   
   <section>
@@ -19,57 +19,91 @@
 	</ul>
    </nav>
    
-   <article>
-    <h2>Characters</h2>
-	<div class="form-group">
-	 <label id="name-label" for="name"><b>Character Name</b></label><br>
-	 <input type="text" name="name" id="name" class="form-control" placeholder="Character Name" required /><br><br>
-	</div>
-	<div class="form-group">
-	 <label id="age-label" for="age"><b>Character Age</b></label><br>
-	 <input type="text" name="age" id="age" class="form-control" placeholder="Age" required /><br><br>
-	</div>
-	<div class="form-group">
-	 <label id="sex-label"><b>Sex</b></label><br>
-	 <input type="radio" id="male" name="sex" value="male">
-	 <label for="male">Male</label><br>
-	 <input type="radio" id="female" name="sex" value="female">
-	 <label for="female">Female</label><br>
-	 <input type="radio" id="other" name="sex" value="other">
-	 <label for="other">Other</label><br><br>
-	</div>
-	<div class="form-group">
-	 <label id="gender-label" for="gender"><b>Gender</b></label><br>
-	 <input type="text" name="gender" id="gender" class="form-control" placeholder="Gender" required /><br><br>
-	</div>
-	<div class="form-group">
-	 <label id="world" for="home-world"><b>Home World</b></label><br>
-	 <input type="text" name="home-world" id="home-world" class="form-control" placeholder="Home World" required /><br><br>
-	</div>
-	<div class="form-group">
-	 <label id="country" for="home-country"><b>Home Country</b></label><br>
-	 <input type="text" name="home-country" class="form-control" placeholder="Home Country" required /><br><br>
-	</div>
-	<div class="form-group">
-	 <label id="city" for="home-city"><b>Home City</b></label><br>
-	 <input type="text" name="home-city" class="form-control" placeholder="Home City" required /><br><br>
-	</div>
-	<div class="form-group">
-	 <label id="social-class"><b>Social Class</b><label><br>
-	 <input type="radio" id="upper" name="upper-class" value="upper">
-	 <label for="upper">Upper Class</label><br>
-	 <input type="radio" id="middle" name="middle-class" value="middle">
-	 <label for="middle">Middle Class</label><br>
-	 <input type="radio" id="lower" name="lower-class" value="lower">
-	 <label for="lower">Lower Class</label><br>
-	 <input type="radio" id="poor" name="poor-class" value="poor">
-	 <label for="poor">Poor</label><br><br>
-	</div>
+   <article id="character-creation">
+    <h2 align="center">Character Sheet Creator</h2>
+	<table style="width:100%">
+	 <tr>
+	  <td>
+	   <div class="form-group">
+	    <label id="name-label" for="name"><b>Character Name</b></label><br>
+	    <input type="text" name="name" id="name" class="form-control" placeholder="Character Name" required />
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="age-label" for="age"><b>Character Age</b></label><br>
+	    <input type="text" name="age" id="age" class="form-control" placeholder="Age" required />
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="sex-label" for="sex"><b>Sex</b></label><br>
+	    <select id="sex">
+		 <option value="Male">Male</option>
+		 <option value="Female">Female</option>
+		 <option value="Other">Other</option>
+		</select>
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="gender-label" for="gender"><b>Gender</b></label><br>
+	    <input type="text" name="gender" id="gender" class="form-control" placeholder="Gender" required />
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="world" for="home-world"><b>Home World</b></label><br>
+	    <input type="text" name="home-world" id="home-world" class="form-control" placeholder="Home World" required />
+	   </div>
+	  </td>
+	 </tr>
+	 
+	 <tr>
+	  <td>
+	   <div class="form-group">
+	    <label id="country" for="home-country"><b>Home Country</b></label><br>
+	    <input type="text" name="home-country" class="form-control" placeholder="Home Country" required />
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="city" for="home-city"><b>Home City</b></label><br>
+	    <input type="text" name="home-city" class="form-control" placeholder="Home City" required />
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="social-class" for="s-class"><b>Social Class</b><label><br>
+		<select id="s-class">
+		 <option value="Upper Class">Upper Class</option>
+		 <option value="Middle Class">Middle Class</option>
+		 <option value="Lower Class">Lower Class</option>
+		 <option value="Poor">Poor</option>
+		</select>
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="eye-color" for="eyecolor"><b>Eye Color</b></label><br>
+		<input type="text" name="eyecolor" class="form-control" placeholder="Eye Color" required />
+	   </div>
+	  </td>
+	  <td>
+	   <div class="form-group">
+	    <label id="hair-color" for="haircolor"><b>Hair Color</b></label><br>
+		<input type="text" name="haircolor" class="form-control" placeholder="Hair Color" required />
+	   </div>
+	  </td>
+	 </tr>
+	</table>
    </article>
   </section>
   
+  <!-- Removing the footer for now
   <footer>
    <h5>Brought to you by Seth Horn</h5>
   </footer>
+  -->
  </body>
 </html>

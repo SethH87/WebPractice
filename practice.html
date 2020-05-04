@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Purchase Goods</title>
+        <meta charset='UTF-8'>
+        <link href="style/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>Purchase Goods</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="Plot.html">Plot</a></li>
+                    <li><a href="Characters.html">Characters</a></li>
+                    <li><a href="World.html">World</a></li>
+                </ul>
+            </nav>
+            
+            <form action='php/practice.php' method='post'>
+                <article>
+                    <h2>Goods</h2>
+
+                    <p>
+                        <label id="gm-label" for="gmgoods"><b>General Merchandise Quantity</b></label><br>
+                        <input type="number" name="gmgoods" id="gmgoods" min="0" max="999" class="form-control"><br><br>
+
+                        <label id="gr-label" for="grgoods"><b>Grocery Merchandise Quantity</b></label><br>
+                        <input type="number" name="grgoods" id="grgoods" min="0" max="999" class="form-control"><br><br>
+
+                        <input type='submit' value='Submit Quantities' />
+                    </p>
+                </article>
+            </form>
+        </section>
+    </body>
+</html>
